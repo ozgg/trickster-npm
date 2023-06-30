@@ -1,0 +1,54 @@
+Arguments: 
+  /Users/maxim/.nvm/versions/node/v18.16.1/bin/node /opt/homebrew/bin/yarn add --dev del-cli typescript
+
+PATH: 
+  /Users/maxim/.nvm/versions/node/v18.16.1/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/maxim/.rbenv/shims:/Users/maxim/.rbenv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Volumes/Projects/Ozgg/trickster-npm/package.json: Unexpected token } in JSON at position 288
+      at JSON.parse (<anonymous>)
+      at /opt/homebrew/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /opt/homebrew/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "@biovision/trickster",
+    "version": "1.0.0",
+    "description": "NPM part for Trickster project",
+    "main": "./build/index.js",
+    "types": "./build/index.d.ts",
+    "files": [
+      "build/**/*"
+    ],
+    "scripts": {
+      "clean": "del ./build/*",
+      "build": "yarn clean && tsc",
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/ozgg/trickster-npm.git"
+    },
+    "author": "Maxim Khan-Magomedov",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/ozgg/trickster-npm/issues"
+    },
+    "homepage": "https://github.com/ozgg/trickster-npm#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
